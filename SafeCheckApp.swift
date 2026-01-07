@@ -2,22 +2,16 @@
 //  SafeCheckApp.swift
 //  SafeCheck
 //
-//  Created by User on 11/25/25.
+//  Created by Jim Bouldin on 12/23/25.
 //
 
 import SwiftUI
 
 @main
 struct SafeCheckApp: App {
-    @StateObject var manager = CheckInManager()
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(manager)
-                .onAppear {
-                    manager.requestPermissions()
-                }
         }
     }
 }
