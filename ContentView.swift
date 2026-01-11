@@ -154,7 +154,14 @@ struct ContentView: View {
                     selectedContacts = Array(selectedContacts.prefix(3))
                 }
             }
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
         }
+        .padding()
     }
     
     var mainView: some View {
