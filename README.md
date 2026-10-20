@@ -27,13 +27,20 @@ it the app is terminated by iOS the moment it asks for contacts permission.
 
 ## Repository layout
 
+All sources live in `SafeCheck/`. That folder is not cosmetic — the project
+group has `path = SafeCheck`, so Xcode resolves every file relative to it. Files
+at the repository root appear red in Xcode and do not compile.
+
 | Path | Purpose |
 |---|---|
-| `SafeCheckApp.swift` | `@main` entry point |
-| `ContentView.swift` | Setup flow, contact selection, the "Are you OK?" prompt, and the inactivity timer |
-| `CheckInManager.swift` | Earlier timer implementation — **unused** |
-| `ContactsView.swift` | Placeholder list with hardcoded names — **unused** |
-| `EmergencySendView.swift` | Stub alert screen — **unused** |
+| `SafeCheck/SafeCheckApp.swift` | `@main` entry point |
+| `SafeCheck/ContentView.swift` | Setup flow, contact selection, the "Are you OK?" prompt, and the inactivity timer |
+| `SafeCheck/CheckInManager.swift` | Earlier timer implementation — **unused** |
+| `SafeCheck/ContactsView.swift` | Placeholder list with hardcoded names — **unused** |
+| `SafeCheck/EmergencySendView.swift` | Stub alert screen — **unused** |
+| `SafeCheck/Info.plist` | Minimal; keys are generated from build settings |
+| `SafeCheck/Assets.xcassets` | `AppIcon` and `AccentColor` (both empty placeholders) |
+| `SafeCheck/Preview Content/` | Preview-only assets, excluded from release builds |
 
 The three files marked unused are leftovers from three competing approaches.
 They are still members of the build target, so they compile but are never shown.
