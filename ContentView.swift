@@ -6,7 +6,7 @@ import Contacts
 import ContactsUI
 import MessageUI  // For future texting; not used yet but imported for later development
 import UIKit
-internal import Combine
+import Combine
 
 
 struct Contact {
@@ -154,14 +154,7 @@ struct ContentView: View {
                     selectedContacts = Array(selectedContacts.prefix(3))
                 }
             }
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
         }
-        .padding()
     }
     
     var mainView: some View {
