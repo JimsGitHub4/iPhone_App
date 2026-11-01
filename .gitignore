@@ -1,0 +1,32 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# macOS
+.DS_Store
+
+# Credentials & signing — never commit these
+*.p8
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+GoogleService-Info.plist
+Secrets.swift
+*.env
+.env.*
+
+# Twilio / backend keys live in the server environment, not in the app bundle
